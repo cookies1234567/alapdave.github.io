@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alap Dave</title>
+  <meta name="description" content="The official website of Alap Dave – About Me, Published Work, and the Aruna Dave Scholarship.">
+  <link rel="icon" href="assets/favicon.png">
+  <meta property="og:title" content="Alap Dave">
+  <meta property="og:description" content="Learn about Alap Dave, explore his published work, and support the Aruna Dave Scholarship.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-image.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1><a href="/">Alap Dave</a></h1>
+      <nav>
+        <a href="#about-me">About Me</a>
+        <a href="#published-work">Published Work</a>
+        <a href="#aruna-dave-scholarship">Aruna Dave Scholarship</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <h1 class="hero-title">Alap Dave</h1>
+      <p class="hero-tagline">Writer • Researcher • Builder</p>
+    </section>
+
+    <section id="about-me" class="container section">
+      <h3>About Me</h3>
+      <p>Hello! I’m Alap Dave, a writer and policy researcher focused on housing, finance, and education equity. I blend data-driven analysis with community advocacy, and I’m passionate about creating accessible, impactful solutions.</p>
+      <p><em>Full biography coming soon.</em></p>
+    </section>
+
+    <section id="published-work" class="container section">
+      <h3>Published Work</h3>
+      <p>Here are some highlights from my writing and research. A full archive will be available soon.</p>
+      <ul class="cards">
+        <li class="card">
+          <h4><a href="#" target="_blank">Sample Article Title #1</a></h4>
+          <p>A short description of the article or paper.</p>
+          <span class="meta">Publication • Year</span>
+        </li>
+        <li class="card">
+          <h4><a href="#" target="_blank">Sample Article Title #2</a></h4>
+          <p>A short description of the article or paper.</p>
+          <span class="meta">Publication • Year</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="aruna-dave-scholarship" class="container section">
+      <h3>Aruna Dave Scholarship</h3>
+      <p>The Aruna Dave Scholarship supports high-potential students with financial need. 100% of donations go directly to awards and educational essentials.</p>
+      <p><a class="button" href="#" target="_blank">Donate on GoFundMe</a></p>
+    </section>
+
+    <section id="contact" class="container section">
+      <h3>Contact</h3>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:hello@alapdave.com">hello@alapdave.com</a></li>
+        <li>LinkedIn: <a href="#" target="_blank">linkedin.com/in/yourprofile</a></li>
+        <li>Twitter/X: <a href="#" target="_blank">@yourhandle</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Alap Dave. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
