@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alap Dave</title>
+  <meta name="description" content="Alap Dave — writer, researcher, builder. Published work and the Aruna Dave Scholarship." />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="#">Alap Dave</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#work">Published Work</a>
+        <a href="#scholarship">Scholarship</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1>Writer. Researcher. Builder.</h1>
+          <p class="lead">I write about housing, finance, and education — and support students through the Aruna Dave Scholarship.</p>
+          <div class="ctas">
+            <a href="#work" class="btn">Read my work</a>
+            <a href="#scholarship" class="btn ghost">Support the scholarship</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="assets/headshot.jpg" alt="Alap Dave headshot" class="headshot" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="wrap">
+        <h2>About Me</h2>
+        <p>Hi, I’m Alap. I focus on data‑driven analysis and accessible policy writing across housing, finance, and education. I care about building simple products that expand opportunity.</p>
+        <p class="muted"><em>Full bio coming soon.</em></p>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Published Work</h2>
+          <a class="link" href="#" target="_blank" rel="noopener">See all →</a>
+        </div>
+        <ul class="cards">
+          <li class="card">
+            <h3><a href="#" target="_blank" rel="noopener">Sample Article Title #1</a></h3>
+            <p>1–2 sentence summary that explains the key idea and why it matters.</p>
+            <span class="meta">Publication • Year</span>
+          </li>
+          <li class="card">
+            <h3><a href="#" target="_blank" rel="noopener">Sample Article Title #2</a></h3>
+            <p>1–2 sentence summary for quick scanning.</p>
+            <span class="meta">Publication • Year</span>
+          </li>
+          <li class="card">
+            <h3><a href="#" target="_blank" rel="noopener">Sample Article Title #3</a></h3>
+            <p>1–2 sentence summary for quick scanning.</p>
+            <span class="meta">Publication • Year</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SCHOLARSHIP -->
+    <section id="scholarship" class="section">
+      <div class="wrap">
+        <h2>Aruna Dave Scholarship</h2>
+        <div class="panel">
+          <div>
+            <p>The scholarship supports high‑potential students with financial need. Funds go to tuition, books, and essentials.</p>
+            <p class="muted">Transparent reporting will be published each award cycle.</p>
+            <p class="muted" style="margin-top: 16px;">Learn more about <a href="https://www.atttech.org/" target="_blank" rel="noopener" style="color: var(--brand); text-decoration: none; font-weight: 500;">AT&T Technology Park</a> — providing free technological education to disabled youngsters in India.</p>
+          </div>
+          <a href="#" class="btn">Donate on GoFundMe</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="wrap">
+        <h2>Contact</h2>
+        <p class="muted" style="margin-bottom: 24px;">Get in touch — I'm always open to discussing new projects, collaborations, or ideas.</p>
+        <ul class="links">
+          <li>Email: <a href="mailto:hello@alapdave.com">hello@alapdave.com</a></li>
+          <li>LinkedIn: <a href="#" target="_blank" rel="noopener">linkedin.com/in/yourprofile</a></li>
+          <li>Twitter/X: <a href="#" target="_blank" rel="noopener">@yourhandle</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div style="margin-bottom: 12px;">
+        <a href="https://www.atttech.org/" target="_blank" rel="noopener">AT&T Technology Park</a>
+      </div>
+      <div>© <span id="year"></span> Alap Dave</div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const href = a.getAttribute('href');
+        if(href.startsWith('#')){
+          e.preventDefault();
+          document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
